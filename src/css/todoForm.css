@@ -1,0 +1,46 @@
+.todoForm {
+    width: 640px;
+    /* width: 700px; */
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    /* gap: 10px; */
+}
+
+#todo-input {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 12px 20px;
+    background: none;
+    border: 2px solid var(--secondary-color);
+    border-radius: 100px;
+    font: inherit;
+    color: var(--text-color);
+    caret-color: var(--accent-color);
+}
+
+#todo-input:focus {
+    outline: none;
+}
+
+form {
+    position: relative;
+}
+
+.add-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    height: 100%;
+    padding: 0px 36px;
+    border: none;
+    border-radius: 100px;
+    background-color: var(--accent-color);
+    cursor: pointer;
+
+    font: inherit;
+    font-weight: 600;
+    color: var(--background);
+}

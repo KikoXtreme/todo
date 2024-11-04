@@ -1,5 +1,6 @@
 import { ChangeEvent, useState } from "react";
 import ToDoList from "../ToDoList/ToDoList";
+import '../../css/todoForm.css';
 
 const ToDoForm = () => {
 
@@ -14,10 +15,10 @@ const ToDoForm = () => {
     return (
         <div className="todoForm" >
             <form>
-                <input type="text" value={value} onChange={handleClick}/>
-                <button>ADD</button>
+                <input id="todo-input" type="text" value={value} placeholder="To-Do Items" onChange={handleClick} />
+                <button className="add-button">ADD</button>
             </form>
-            <ToDoList list={value}/>
+            <ToDoList list={value} />
         </div>
     )
 }

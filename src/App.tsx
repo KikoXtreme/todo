@@ -1,5 +1,5 @@
 import './App.css';
-import Header from './components/Header/Header';
+import ToDoHeader from './components/ToDoHeader/ToDoHeader';
 import ToDoForm from './components/ToDoForm/ToDoForm';
 // import ToDoList from './components/ToDoList/ToDoList';
 
@@ -7,7 +7,7 @@ import ToDoForm from './components/ToDoForm/ToDoForm';
 function App() {
   return (
     <div className="App">
-      <Header />
+      <ToDoHeader />
       <ToDoForm />
       {/* <ToDoList /> */}
     </div>
